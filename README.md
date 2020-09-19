@@ -13,7 +13,7 @@
 
 <br />
 <p align="center">
-<a href="https://ieeexplore.ieee.org/abstract/document/9171866" ><font size="6">[Paper] </font></a>
+<a href="https://ieeexplore.ieee.org/abstract/document/9171866" ><font size="10">[Paper] </font></a>
 <p>
 <br />
 <br />
@@ -32,8 +32,9 @@ concatenation.
 <br />
 <p align="center">
 <img src="files/densenet.png" class="centerImage" height="140" width="600"  />
- <figcaption>Dense Block with growth rate <i>k</i></figcaption>
-
+<p>
+<p align="center">
+<figcaption>Dense Block with growth rate <i>k</i></figcaption>
 <p>
 <br />
 
