@@ -3,7 +3,10 @@
 </p>
 <br/>
 
-
+In the present repository you can find the source code of the Attention! A Lightweight 2D Hand Pose Estimation Approach paper
+<br/>
+<br/>
+<br/>
 # Abstract
 ---
 <p align="center">
