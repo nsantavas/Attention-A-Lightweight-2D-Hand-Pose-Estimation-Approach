@@ -1,8 +1,7 @@
 <p align="center">
-<center><img src="files/hand.png" class="centerImage" height="300" width="300"  />
-</center>
+<img src="files/hand.png" class="centerImage" height="300" width="300"  />
 </p>
-<br />
+<br/>
 
 
 # Abstract
