@@ -1,5 +1,7 @@
+<p align="center">
 <center><img src="files/hand.png" class="centerImage" height="300" width="300"  />
 </center>
+</p>
 <br />
 
 
@@ -12,7 +14,6 @@
 
 <br />
 <p align="center">
-<center>
 <a href="https://ieeexplore.ieee.org/abstract/document/9171866" ><font size="6">[Paper] </font></a>
 <p>
 <br />
