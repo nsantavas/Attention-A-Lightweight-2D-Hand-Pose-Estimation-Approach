@@ -6,10 +6,9 @@
 # Abstract
 ---
 <p align="center">
-<div style="text-align: justify">
 </p>
  Vision based human pose estimation is an non-invasive technology for human-computer interaction (HCI). Direct use of the hand as an input device provides an attractive interaction method, with minimum need for specialized equipment, such as exoskeletons, gloves etc, but a camera and a processing platform. Various applications exploit algorithms which have the capability of estimating a hand's pose. Such applications include control of robotics systems, video games, computer-generated imagery (CGI) etc. In this letter, we present a novel Convolutional Neural Network architecture, reinforced with a Self-Attention module that it could be deployed on an embedded system, due to its lightweight nature, with just <B><i>1,9 Million</i></B> parameters.
- </div>
+
 
 <br />
 <p align="center">
