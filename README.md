@@ -21,7 +21,7 @@
 # Method Overview
 ---
 <p align="center">
-<div style="text-align: justify">
+
 The presented architecture is based on the very successful
 idea of DenseNets. In a DenseNet, each layer obtains
 additional inputs from all preceding ones and propagates its
@@ -31,25 +31,24 @@ concatenation.
 <p>
 <br />
 <p align="center">
- <center><img src="files/densenet.png" class="centerImage" height="140" width="600"  />
+<img src="files/densenet.png" class="centerImage" height="140" width="600"  />
  <figcaption>Dense Block with growth rate <i>k</i></figcaption>
-</center>
+
 <p>
 <br />
 
 <p align="center">
-<div style="text-align: justify">
+
 We implement the <i>inverted bottleneck block</i>,
 enhanced by an <i>Attention Augmented Convolutional layer</i>,
 which output is added to the product of the Depthwise Separable Convolutional layer, as shown to the following figure.
-</div>
+
 <p>
 
 <br />
 <p align="center">
- <center><img src="files/aaib.png" class="centerImage" height="220" width="280"  />
+<img src="files/aaib.png" class="centerImage" height="220" width="280"  />
  <figcaption>Attention Augmented Inverted Bottleneck Layer</figcaption>
-</center>
 <p>
 <br />
 
