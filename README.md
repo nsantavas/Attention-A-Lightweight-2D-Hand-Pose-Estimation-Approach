@@ -5,20 +5,23 @@
 
 # Abstract
 ---
-
+<p align="center">
 <div style="text-align: justify">
+</p>
  Vision based human pose estimation is an non-invasive technology for human-computer interaction (HCI). Direct use of the hand as an input device provides an attractive interaction method, with minimum need for specialized equipment, such as exoskeletons, gloves etc, but a camera and a processing platform. Various applications exploit algorithms which have the capability of estimating a hand's pose. Such applications include control of robotics systems, video games, computer-generated imagery (CGI) etc. In this letter, we present a novel Convolutional Neural Network architecture, reinforced with a Self-Attention module that it could be deployed on an embedded system, due to its lightweight nature, with just <B><i>1,9 Million</i></B> parameters.
  </div>
 
 <br />
+<p align="center">
 <center>
 <a href="https://ieeexplore.ieee.org/abstract/document/9171866" ><font size="6">[Paper] </font></a>
+<p>
 <br />
 <br />
 
 # Method Overview
 ---
-
+<p align="center">
 <div style="text-align: justify">
 The presented architecture is based on the very successful
 idea of DenseNets. In a DenseNet, each layer obtains
@@ -26,28 +29,34 @@ additional inputs from all preceding ones and propagates its
 own feature-maps to all subsequent layers, by a channel-wise
 concatenation.
  </div>
-
+<p>
 <br />
+<p align="center">
  <center><img src="files/densenet.png" class="centerImage" height="140" width="600"  />
  <figcaption>Dense Block with growth rate <i>k</i></figcaption>
 </center>
+<p>
 <br />
 
+<p align="center">
 <div style="text-align: justify">
 We implement the <i>inverted bottleneck block</i>,
 enhanced by an <i>Attention Augmented Convolutional layer</i>,
 which output is added to the product of the Depthwise Separable Convolutional layer, as shown to the following figure.
 </div>
+<p>
 
 <br />
+<p align="center">
  <center><img src="files/aaib.png" class="centerImage" height="220" width="280"  />
  <figcaption>Attention Augmented Inverted Bottleneck Layer</figcaption>
 </center>
+<p>
 <br />
 
 # Results
 ---
-
+<p align="center">
 <center>
 <div class="masonry">
   <img src="files/pck.png" width="32%"  alt>
@@ -232,7 +241,7 @@ which output is added to the product of the Depthwise Separable Convolutional la
 
 </div>
 </center>
-
+<p>
 
 <br />
 <br />
