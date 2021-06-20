@@ -252,10 +252,16 @@ which output is added to the product of the Depthwise Separable Convolutional la
 ---
 If you find this paper useful in your research, please consider citing:
 
-	@article{
-          author={N. {Santavas} and I. {Kansizoglou} and L. {Bampis} and E. {Karakasis} and A. {Gasteratos}},
-          journal={IEEE Sensors Journal},
-          title={Attention! A Lightweight 2D Hand Pose Estimation Approach},
-          year={2020},
+```bibtex
+@ARTICLE{9171866,
+  author={Santavas, Nicholas and Kansizoglou, Ioannis and Bampis, Loukas and Karakasis, Evangelos and Gasteratos, Antonios},
+  journal={IEEE Sensors Journal}, 
+  title={Attention! A Lightweight 2D Hand Pose Estimation Approach}, 
+  year={2021},
+  volume={21},
+  number={10},
+  pages={11488-11496},
+  doi={10.1109/JSEN.2020.3018172}}
+  ```
 
 
