@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>2D Hand Pose Estimation: A Lightweight Approach | Laboratory of Robotics and Automation, DUTH, Greece</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="2D Hand Pose Estimation: A Lightweight Approach" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Laboratory of Robotics and Automation, DUTH, Greece" />
+<meta property="og:description" content="Laboratory of Robotics and Automation, DUTH, Greece" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="2D Hand Pose Estimation: A Lightweight Approach" />
+<script type="application/ld+json">
+{"@type":"WebSite","url":"http://localhost:4000/","name":"2D Hand Pose Estimation: A Lightweight Approach","headline":"2D Hand Pose Estimation: A Lightweight Approach","description":"Laboratory of Robotics and Automation, DUTH, Greece","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="2D Hand Pose Estimation: A Lightweight Approach" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">2D Hand Pose Estimation: A Lightweight Approach</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about.html">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title"></h1>
+  </header>
+
+  <div class="post-content">
+    <center><img src="files/hand.png" class="centerImage" height="300" width="300" />
+</center>
+<p><br /></p>
+
+<h1 id="abstract">Abstract</h1>
+<hr />
+
+<div style="text-align: justify">
+ Vision based human pose estimation is an non-invasive technology for human-computer interaction (HCI). Direct use of the hand as an input device provides an attractive interaction method, with minimum need for specialized equipment, such as exoskeletons, gloves etc, but a camera and a processing platform. Various applications exploit algorithms which have the capability of estimating a hand's pose. Such applications include control of robotics systems, video games, computer-generated imagery (CGI) etc. In this letter, we present a novel Convolutional Neural Network architecture, reinforced with a Self-Attention module that it could be deployed on an embedded system, due to its lightweight nature, with just <b><i>1,9 Million</i></b> parameters.
+ </div>
+
+<p><br /></p>
+<center>
+<a href="https://www.w3schools.com/html/"><font size="6">Paper </font></a>
+</center>
+<p><br />
+<br /></p>
+
+<h1 id="method-overview">Method Overview</h1>
+<hr />
+
+<div style="text-align: justify">
+The presented architecture is based on the very successful
+idea of DenseNets. In a DenseNet, each layer obtains
+additional inputs from all preceding ones and propagates its
+own feature-maps to all subsequent layers, by a channel-wise
+concatenation.
+ </div>
+
+<p><br /></p>
+<center><img src="files/densenet.png" class="centerImage" height="140" width="600" />
+ <figcaption>Dense Block with growth rate <i>k</i></figcaption>
+</center>
+<p><br /></p>
+
+<div style="text-align: justify">
+We implement the <i>inverted bottleneck block</i>,
+enhanced by an <i>Attention Augmented Convolutional layer</i>,
+which output is added to the product of the Depthwise Separable Convolutional layer, as shown to the following figure.
+</div>
+
+<p><br /></p>
+<center><img src="files/aaib.png" class="centerImage" height="220" width="280" />
+ <figcaption>Attention Augmented Inverted Bottleneck Layer</figcaption>
+</center>
+<p><br /></p>
+
+<h1 id="results">Results</h1>
+<hr />
+
+<center>
+<div class="masonry">
+  <img src="files/pck.png" width="32%" alt="" />
+  <img src="files/pck_h.png" width="32%" alt="" />
+  <img src="files/pck_all.png" width="32%" alt="" />
+</div>
+</center>
+
+<p><br />
+<br />
+<br /></p>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:0px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;border-color:black;}
+.tg .tg-9wq8{border-color:inherit;text-align:center;vertical-align:middle}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-wh93{font-weight:bold;border-color:#cccccc;text-align:center;vertical-align:top}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-7btt{font-weight:bold;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-o57c{border-color:#cccccc;text-align:center;vertical-align:top}
+</style>
+
+<table class="tg" align="center">
+  <tr>
+    <th class="tg-c3ow" rowspan="2"></th>
+    <th class="tg-9wq8" rowspan="2">AUC</th>
+    <th class="tg-c3ow" colspan="2">EPE (px)</th>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Mean</td>
+    <td class="tg-c3ow">Median</td>
+  </tr>
+  <tr>
+    <td class="tg-7btt" colspan="4">MPII+NZSL Dataset</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Zimm. et al. (ICCV 2017)</td>
+    <td class="tg-c3ow">0.17</td>
+    <td class="tg-c3ow">59.4</td>
+    <td class="tg-c3ow">-</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Bouk. et al. (CVPR 2019)<br /></td>
+    <td class="tg-c3ow">0.50</td>
+    <td class="tg-c3ow">18.95</td>
+    <td class="tg-c3ow">-</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Ours<br /></td>
+    <td class="tg-7btt">0.55</td>
+    <td class="tg-7btt">16.1</td>
+    <td class="tg-7btt">11</td>
+  </tr>
+  <tr>
+    <td class="tg-amwm" colspan="4">LSMV Dataset</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">Gomez-Donoso et al.</td>
+    <td class="tg-baqh">-</td>
+    <td class="tg-baqh">10</td>
+    <td class="tg-baqh">-</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">Li et al.</td>
+    <td class="tg-baqh">-</td>
+    <td class="tg-baqh">8</td>
+    <td class="tg-baqh">-</td>
+  </tr>
+  <tr>
+    <td class="tg-wh93">Ours</td>
+    <td class="tg-o57c">0.89</td>
+    <td class="tg-wh93">3.3</td>
+    <td class="tg-o57c">2.5</td>
+  </tr>
+  <tr>
+    <td class="tg-amwm" colspan="4">Stereo Hand Pose Dataset</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">Zimm et al. (ICCV 2017)</td>
+    <td class="tg-baqh">0.81</td>
+    <td class="tg-baqh">5</td>
+    <td class="tg-baqh">5.5</td>
+  </tr>
+  <tr>
+    <td class="tg-amwm">Ours</td>
+    <td class="tg-amwm">0.92</td>
+    <td class="tg-amwm">2.2</td>
+    <td class="tg-amwm">1.8</td>
+  </tr>
+  <tr>
+    <td class="tg-amwm" colspan="4">HO-3D Dataset</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">Ours</td>
+    <td class="tg-baqh">0.87</td>
+    <td class="tg-baqh">3.9</td>
+    <td class="tg-baqh">3.3</td>
+  </tr>
+  <tr>
+    <td class="tg-amwm" colspan="4" rowspan="2">FreiHand Dataset</td>
+  </tr>
+  <tr>
+  </tr>
+</table>
+
+<h1 id="examples">Examples</h1>
+<hr />
+
+<center>
+<div class="masonry">
+  <img src="files/images/hand1.png" width="32%" alt="" />
+  <img src="files/images/hand2.png" width="32%" alt="" />
+  <img src="files/images/hand3.png" width="32%" alt="" />
+
+  <img src="files/images/hand14.png" width="32%" alt="" />
+  <img src="files/images/hand11.png" width="32%" alt="" />
+  <img src="files/images/hand12.png" width="32%" alt="" />
+
+  <img src="files/images/hand18.png" width="32%" alt="" />
+  <img src="files/images/hand19.png" width="32%" alt="" />
+  <img src="files/images/hand20.png" width="32%" alt="" />
+
+  <img src="files/images/hand29.png" width="32%" alt="" />
+  <img src="files/images/hand26.png" width="32%" alt="" />
+  <img src="files/images/hand27.png" width="32%" alt="" />
+
+  <img src="files/images/hand35.png" width="32%" alt="" />
+  <img src="files/images/hand37.png" width="32%" alt="" />
+  <img src="files/images/hand41.png" width="32%" alt="" />
+</div>
+</center>
+
+<h3 id="citation">Citation</h3>
+<hr />
+<p>If you find this paper useful in your research, please consider citing:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@article{huang2019convolutional,
+ title={Convolutional Networks with Dense Connectivity},
+ author={Huang, Gao and Liu, Zhuang and Pleiss, Geoff and Van Der Maaten, Laurens and Weinberger, Kilian},
+ journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+ year={2019}
+ }
+</code></pre></div></div>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">2D Hand Pose Estimation: A Lightweight Approach</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">2D Hand Pose Estimation: A Lightweight Approach</li><li><a class="u-email" href="mailto:nsantava@pme.duth.gr">nsantava@pme.duth.gr</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/nsantavas"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">nsantavas</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Laboratory of Robotics and Automation, DUTH, Greece</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
